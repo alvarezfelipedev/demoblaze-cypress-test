@@ -1,0 +1,14 @@
+Ejercicio 01
+Creamos dos scripts con Cypress:
+
+Con el primero acceder a la API https://datosabiertos-
+apis.buenosaires.gob.ar/BA_Root/Documentacion?schema_name=datos_utiles
+
+Utilizar como parametros calle Paraguay altura 1000.
+Chequear que haya finalizado ok y grabar la información del response como
+fixture (folder fixtures) en un archivo con formato JSON.
+
+Con el segundo lee ese archivo Json y chequea si la comisaria es la 19 y el
+barrio es Colegiales.
+
+Guardar ambos script en el mismo folder y ejecutarlos a la vez.

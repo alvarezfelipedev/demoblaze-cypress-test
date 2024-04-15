@@ -1,0 +1,5 @@
+Ejercicio 02:
+
+Crear un script que haga un GET sobre la api https://apis.datos.gob.ar/georef/api/provincias?campos=id,nombre y grabe en un archivo todas las provincias que comienzan con la letra “S”. 
+
+Nota: La api pueden verla desde un navegador directamente o ver el formato en la url https://datosgobar.github.io/georef-ar-api/ (buscar REFERENCIA))

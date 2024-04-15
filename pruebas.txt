@@ -1,74 +1,15 @@
 
+The supportFile configuration option is now invalid when set from the root of the config object in Cypress version 10.0.0.
 
-====================================================================================================
+It is now configured separately as a testing type property: e2e.supportFile and component.supportFile
 
-  (Run Starting)
+{
+  e2e: {
+    specPattern: '...',
+  },
+  component: {
+    specPattern: '...',
+  },
+}
 
-  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
-  │ Cypress:        13.6.1                                                                         │
-  │ Browser:        Electron 114 (headless)                                                        │
-  │ Node Version:   v18.17.1 (C:\Program Files\nodejs\node.exe)                                    │
-  │ Specs:          1 found (test01.cy.js)                                                         │
-  │ Searched:       D:\.dev\cypress-test\cypress\e2e\1-getting-started\test01.cy.js                │
-  └────────────────────────────────────────────────────────────────────────────────────────────────┘
-
-
-────────────────────────────────────────────────────────────────────────────────────────────────────
-                                                                                                    
-  Running:  test01.cy.js                                                                    (1 of 1)
-
-
-  test01
-    1) Test case 01: con error 
-    √ Test case 02: sin error (24ms)
-
-
-  1 passing (542ms)
-  1 failing
-
-  1) test01
-       Test case 01: con error :
-
-      AssertionError: expected 23 to equal 50
-      + expected - actual
-
-      -23
-      +50
-      
-      at Context.eval (webpack:///./cypress/e2e/1-getting-started/test01.cy.js:8:21)
-
-
-
-
-  (Results)
-
-  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
-  │ Tests:        2                                                                                │
-  │ Passing:      1                                                                                │
-  │ Failing:      1                                                                                │
-  │ Pending:      0                                                                                │
-  │ Skipped:      0                                                                                │
-  │ Screenshots:  1                                                                                │
-  │ Video:        false                                                                            │
-  │ Duration:     0 seconds                                                                        │
-  │ Spec Ran:     test01.cy.js                                                                     │
-  └────────────────────────────────────────────────────────────────────────────────────────────────┘
-
-
-  (Screenshots)
-
-  -  D:\.dev\cypress-test\cypress\screenshots\test01.cy.js\test01 -- Test case 01 con     (1280x720)
-      error (failed).png                                                                            
-
-
-====================================================================================================
-
-  (Run Finished)
-
-
-       Spec                                              Tests  Passing  Failing  Pending  Skipped  
-  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
-  │ ×  test01.cy.js                             542ms        2        1        1        -        - │
-  └────────────────────────────────────────────────────────────────────────────────────────────────┘
-    ×  1 of 1 failed (100%)                     542ms        2        1        1        -        -  
-
+https://on.cypress.io/migration-guide
